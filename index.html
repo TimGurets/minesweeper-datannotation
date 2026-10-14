@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game">
+    <header class="header">
+      <p class="eyebrow">CLASSIC PUZZLE</p>
+      <h1>Minesweeper</h1>
+      <p class="subtitle">Clear the board. Avoid the mines.</p>
+    </header>
+
+    <section class="toolbar">
+      <div class="counter">
+        <span class="counter-label">MINES LEFT</span>
+        <strong id="mine-counter">10</strong>
+      </div>
+
+      <button id="restart" class="restart" aria-label="Restart game">
+        🙂
+      </button>
+
+      <div class="counter timer">
+        <span class="counter-label">TIME</span>
+        <strong id="timer">000</strong>
+      </div>
+    </section>
+
+    <p id="status" class="status" role="status">
+      Find all safe squares.
+    </p>
+
+    <div id="board" class="board"
+         role="group" aria-label="Minesweeper board"></div>
+
+    <div class="controls">
+      <button id="flag-mode" class="mode-button">
+        ⚑ Flag mode: OFF
+      </button>
+    </div>
+
+    <footer>
+      <p>Left-click to reveal · Right-click to flag</p>
+      <p>Numbers show nearby mines.</p>
+    </footer>
+  </main>
+</body>
+</html>
